@@ -30,8 +30,9 @@ ol {
 }
 
 .container{
-    max-width: 1158px;
-    padding: 0 15px;
+    width: 100%;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
@@ -109,7 +110,6 @@ img{
     letter-spacing: 0.02em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 .header-list-link:hover,
@@ -144,25 +144,37 @@ img{
 /*-------------- Hero --------------*/
 .hero{
     background: #2e2f42;
-    padding: 188px 0 188px;
+    padding: 72px 0 72px;
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/hero_img_for_mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
     background-size: cover;
 }
 
+@media screen and (min-resolution: 2x) {
+    .hero{
+        background-image: linear-gradient(to bottom,
+         rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)),
+        url(../images/hero_img_for_mobile_2x.jpg);
+    }
+
+    
+}
+
 .hero-title{
-    font-size: 56px;
-    line-height: 1.07;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 496px;
+    max-width: 216px;
     margin: 0 auto;
 }
 
@@ -182,6 +194,7 @@ img{
     min-width: 169px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
@@ -192,7 +205,9 @@ img{
 /*-------------- benefits --------------*/
 
 .benefits {
-    padding: 120px 0;
+    padding: 96px 0;
+        
+    
 }
 
 .visually-hidden{
@@ -211,49 +226,47 @@ img{
 
 .benefits-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    row-gap: 72px;
+    column-gap: 0;
+
 }
 
 .benefits-list-items {
-    width: calc((100% - 72px) / 4);
+    width: 100%;
 }
 
 .benefits-list-container{
-    width: 100%;
-    height: 112px;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    background: #f4f4fd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
+    display: none;
 }
 
 .benefits-list-img{
-
+    
 }
 
 .benefits-items-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
     margin-bottom: 8px;
 }
 
 .benefits-items-text {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.0196em;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 /*-------------- ourteam --------------*/
 
 .ourteam {
     background-color: #f4f4fd;
-    padding: 120px 0
+    padding: 96px 0;
 }
 
 .ourteam-title {
@@ -269,11 +282,13 @@ img{
 .ourteam-list {
     display: flex;
     gap: 24px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .ourteam-list-item {
+    max-width: 264px;
     background-color: #fff;
-    width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     
@@ -442,7 +457,9 @@ transform: translateY(0);
 
 .footer-container{
     display: flex;
-    align-items: baseline
+    align-items: baseline;
+    flex-direction: column;
+
 }
 
 .footer-text {
@@ -487,6 +504,7 @@ transform: translateY(0);
 
 .footer-form {
     display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 
@@ -502,7 +520,7 @@ transform: translateY(0);
 .footer-input {
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 264px;
+    width: 100%;
     height: 40px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: transparent;
@@ -781,4 +799,117 @@ transform: translateY(0);
 .modal-submit-button:hover,
 .modal-submit-button:focus {
     background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+    
+}
+
+@media screen and (min-width: 1158px) {
+    .container{
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+
+    .benefits-list {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .benefits-list-items {
+        width: calc((100% - 72px) / 4);
+    }
+    
+    .benefits {
+        padding: 120px 0;
+    }
+    .benefits-list-container {
+        width: 100%;
+        height: 112px;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        background: #f4f4fd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .benefits-items-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin-bottom: 8px;
+    }
+
+    .benefits-items-text {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.0196em;
+    }
+
+        /*-------------- ourteam --------------*/
+
+    .ourteam {
+        background-color: #f4f4fd;
+        padding: 120px 0;
+    }
+
+    .ourteam-list {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .ourteam-list-item {
+        background-color: #fff;
+        width: calc((100% - 72px) / 4);
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    }
+
+        /*-------------- Hero --------------*/
+
+    .hero{
+        padding: 188px 0 188px;
+        max-width: 1440px;
+        margin: 0 auto;
+        background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/people-office.jpg);
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+    }
+
+    .hero-button {
+        margin-top: 48px;
+        padding: 16px 32px;
+        min-width: 169px;
+        cursor: pointer;
+        box-shadow: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .footer-container{
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
 }
