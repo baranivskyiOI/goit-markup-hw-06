@@ -21,13 +21,18 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="page-header" hidden>
+    <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
           >
 
+          <button type="button" class="header-menu-button">
+            <svg class="header-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-heroicons-solid-menu"></use>
+            </svg>
+          </button>
           <ul class="header-lsit">
             <li class="header-list-item">
               <a class="header-list-link current" href="./index.html">Studio</a>
@@ -54,6 +59,77 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mob-menu" hidden>
+        <div class="container">
+          <button class="menu-modal-button" type="button">
+            <svg class="button-img" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link mob-menu-current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+          <address class="menu-contacts">
+            <ul class="menu-address-list">
+              <li class="menu-address-list-item">
+                <a
+                  class="menu-address-item-link menu-address-current"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="menu-address-list-item">
+                <a
+                  class="menu-address-item-link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="menu-container-list">
+            <li class="ourteam-container-item menu-container-item">
+              <a class="ourteam-container-item-link footer-link" href="">
+                <svg class="ourteam-container-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram_svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="ourteam-container-item menu-container-item">
+              <a class="ourteam-container-item-link footer-link" href="">
+                <svg class="ourteam-container-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter_svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="ourteam-container-item menu-container-item">
+              <a class="ourteam-container-item-link footer-link" href="">
+                <svg class="ourteam-container-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook_svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="ourteam-container-item footer-container-item">
+              <a class="ourteam-container-item-link footer-link" href="">
+                <svg class="ourteam-container-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin_svg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -307,15 +383,15 @@
                   <!-- доробити для таба та ноута -->
                   <source
                     srcset="
-                      ./images/portfolio-img-desk.jpg    1x,
-                      ./images/portfolio-img-desk@2x.jpg 2x
+                      ./images/design_of_website.jpg    1x,
+                      ./images/design_of_website_x2.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/portfolio-img-tab.jpg     1x,
-                      ./images/portfolio-img-tab-@2x.jpg 2x
+                      ./images/design_of_website_tab.jpg 1x,
+                      ./images/design_of_website_tab_2x  2x
                     "
                     media="(min-width: 768px)"
                   />
@@ -349,15 +425,15 @@
                   <!-- доробити для таба та ноута -->
                   <source
                     srcset="
-                      ./images/portfolio-img-desk.jpg    1x,
-                      ./images/portfolio-img-desk@2x.jpg 2x
+                      ./images/terminal_and_phone.jpg    1x,
+                      ./images/terminal_and_phone_2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/portfolio-img-tab.jpg     1x,
-                      ./images/portfolio-img-tab-@2x.jpg 2x
+                      ./images/terminal_and_phone_tab.jpg    1x,
+                      ./images/terminal_and_phone_tab_2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
@@ -391,22 +467,23 @@
                   <!-- доробити для таба та ноута -->
                   <source
                     srcset="
-                      ./images/portfolio-img-desk.jpg    1x,
-                      ./images/portfolio-img-desk@2x.jpg 2x
+                      ./images/phone_and_leptop_with_img_on_screan.jpg    1x,
+                      ./images/phone_and_leptop_with_img_on_screan_x2.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/portfolio-img-tab.jpg     1x,
-                      ./images/portfolio-img-tab-@2x.jpg 2x
+                      ./images/phone_and_leptop_with_img_on_screan_tab.jpg    1x,
+                      ./images/phone_and_leptop_with_img_on_screan_tab_2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
+
                   <source
                     srcset="
-                      ./images/phone_and_leptop_with_img_on_screan_mobile.jpg 1x,
-                      ./images/phone_and_leptop_with_img_on_screan_mobile_2x  2x
+                      ./images/phone_and_leptop_with_img_on_screan_mobile.jpg    1x,
+                      ./images/phone_and_leptop_with_img_on_screan_mobile_2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
@@ -433,15 +510,15 @@
                   <!-- доробити для таба та ноута -->
                   <source
                     srcset="
-                      ./images/portfolio-img-desk.jpg    1x,
-                      ./images/portfolio-img-desk@2x.jpg 2x
+                      ./images/photo_with_driver_heands.jpg    1x,
+                      ./images/photo_with_driver_heands_2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/portfolio-img-tab.jpg     1x,
-                      ./images/portfolio-img-tab-@2x.jpg 2x
+                      ./images/photo_with_driver_heands_tab.jpg    1x,
+                      ./images/photo_with_driver_heands_tab_2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
@@ -475,15 +552,15 @@
                   <!-- доробити для таба та ноута -->
                   <source
                     srcset="
-                      ./images/portfolio-img-desk.jpg    1x,
-                      ./images/portfolio-img-desk@2x.jpg 2x
+                      ./images/phone_with_moon_screan.jpg    1x,
+                      ./images/phone_with_moon_screan_2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/portfolio-img-tab.jpg     1x,
-                      ./images/portfolio-img-tab-@2x.jpg 2x
+                      ./images/phone_with_moon_screan_tab.jpg    1x,
+                      ./images/phone_with_moon_screan_tab_2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
@@ -517,15 +594,15 @@
                   <!-- доробити для таба та ноута -->
                   <source
                     srcset="
-                      ./images/portfolio-img-desk.jpg    1x,
-                      ./images/portfolio-img-desk@2x.jpg 2x
+                      ./images/Gitl_with_glasses_and_phone.jpg    1x,
+                      ./images/Gitl_with_glasses_and_phone_2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/portfolio-img-tab.jpg     1x,
-                      ./images/portfolio-img-tab-@2x.jpg 2x
+                      ./images/Gitl_with_glasses_and_phone_tab.jpg    1x,
+                      ./images/Gitl_with_glasses_and_phone_tab_2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
@@ -699,9 +776,12 @@
             <label for="user-privacy" class="modal-checkbox-lable"
               ><span class="modal-checkbox-item"
                 ><svg class="modal-checkbox-item-img" width="10" height="8">
-                  <use href="./images/icons.svg#icon-checked"></use></svg></span
-              >I accept the terms and conditions of the
-              <a href="#" class="modal-checkbox-lable-text">Privacy Policy</a>
+                  <use href="./images/icons.svg#icon-checked"></use></svg
+              ></span>
+              <span>
+                I accept the terms and conditions of the
+                <a href="#" class="modal-checkbox-lable-text">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="modal-submit-button">Send</button>
