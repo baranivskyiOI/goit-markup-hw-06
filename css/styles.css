@@ -1108,7 +1108,7 @@ transform: translateY(0);
     }
     
     .modal-checkbox-lable {
-        align-items: baseline;
+        display: block;
     }
 }
 
