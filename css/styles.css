@@ -60,7 +60,6 @@ img{
     border: none;
     background-color: transparent;
     padding: 0;
-    margin-left: auto;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -74,7 +73,7 @@ img{
 
 .header-logo{
     padding: 16px 0;
-    margin-right: 76px;
+    margin-right: auto;
 }
 
 .page-header{
@@ -157,6 +156,18 @@ img{
 
         /*-------------- Mobile menu --------------*/
 
+.mob-menu .container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.menu-centr-block {
+    flex-grow: 1;
+}
+
+
 .mob-menu{
     position: fixed;
     top: 50%;
@@ -166,13 +177,14 @@ img{
     height: 100%;
     background-color: #ffffff;
     z-index: 9999;
+    padding-top: 72px;
 }
 
 .mob-menu-list{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 72px;
+
 }
 
 
@@ -438,7 +450,6 @@ img{
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 8px;
 }
 
 .ourteam-container-item {
@@ -1176,6 +1187,7 @@ transform: translateY(0);
     }
 
     .benefits-items-title {
+        text-align-last: left;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -1325,6 +1337,7 @@ transform: translateY(0);
         padding: 72px 24px 24px 24px;
     }
 
+    
     .modal-checkbox-lable {
         display: block;
     }
